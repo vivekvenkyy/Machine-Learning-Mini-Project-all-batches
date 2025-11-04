@@ -1,0 +1,5 @@
+{
+  "name": "Spectral Clustering Visualizer & Comparator",
+  "description": "An interactive web application to visualize and compare Spectral Clustering with other clustering algorithms like K-Means, DBSCAN, and Agglomerative Clustering, featuring AI-powered analysis from Gemini.",
+  "requestFramePermissions": []
+}
