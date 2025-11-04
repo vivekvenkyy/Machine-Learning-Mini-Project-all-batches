@@ -1,0 +1,5 @@
+.venv/
+venv/
+Agglomerative Clustering Group 10/venv/
+__pycache__/
+*.pyc
