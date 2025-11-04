@@ -1,0 +1,10 @@
+employee_id,age,years_experience,salary,department,performance_score,training_completed,last_promotion_date,absences,productivity_index
+EMP001,25,2.5,45000,IT,,85.5,2024-05-15,3,
+EMP002,invalid_age,5.3,52000,HR,92.1,Yes,2023-12-01,5,78.3
+EMP003,31,,60000,Finance,88.7,No,2024-01-15,,82.1
+EMP004,29,4.2,48000,IT,90.2,Yes,invalid_date,4,75.9
+EMP005,35,8.0,70000,Marketing,95.3,No,2023-11-30,2,89.4
+,42,12.5,85000,Finance,91.8,Yes,2024-03-20,6,84.2
+EMP007,28,3.1,,IT,87.4,No,2024-02-28,8,77.8
+EMP008,33,6.5,58000,HR,constant,Yes,2023-10-15,1,81.5
+EMP009,27,2.8,46000,Marketing,89.9,Maybe,2024-04-10,7,76.3
