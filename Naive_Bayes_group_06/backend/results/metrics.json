@@ -1,0 +1,179 @@
+{
+    "models": {
+        "Naive Bayes": {
+            "accuracy": 0.958041958041958,
+            "classification_report": {
+                "0": {
+                    "precision": 0.9662921348314607,
+                    "recall": 0.9662921348314607,
+                    "f1-score": 0.9662921348314607,
+                    "support": 89.0
+                },
+                "1": {
+                    "precision": 0.9444444444444444,
+                    "recall": 0.9444444444444444,
+                    "f1-score": 0.9444444444444444,
+                    "support": 54.0
+                },
+                "accuracy": 0.958041958041958,
+                "macro avg": {
+                    "precision": 0.9553682896379525,
+                    "recall": 0.9553682896379525,
+                    "f1-score": 0.9553682896379525,
+                    "support": 143.0
+                },
+                "weighted avg": {
+                    "precision": 0.958041958041958,
+                    "recall": 0.958041958041958,
+                    "f1-score": 0.958041958041958,
+                    "support": 143.0
+                }
+            },
+            "plots": {
+                "confusion_matrix": "/results/cm_naive_bayes.png"
+            }
+        },
+        "Logistic Regression": {
+            "accuracy": 0.958041958041958,
+            "classification_report": {
+                "0": {
+                    "precision": 0.9560439560439561,
+                    "recall": 0.9775280898876404,
+                    "f1-score": 0.9666666666666667,
+                    "support": 89.0
+                },
+                "1": {
+                    "precision": 0.9615384615384616,
+                    "recall": 0.9259259259259259,
+                    "f1-score": 0.9433962264150944,
+                    "support": 54.0
+                },
+                "accuracy": 0.958041958041958,
+                "macro avg": {
+                    "precision": 0.9587912087912088,
+                    "recall": 0.9517270079067832,
+                    "f1-score": 0.9550314465408805,
+                    "support": 143.0
+                },
+                "weighted avg": {
+                    "precision": 0.9581188042726505,
+                    "recall": 0.958041958041958,
+                    "f1-score": 0.9578792276905485,
+                    "support": 143.0
+                }
+            },
+            "plots": {
+                "confusion_matrix": "/results/cm_logistic_regression.png"
+            }
+        },
+        "Decision Tree": {
+            "accuracy": 0.951048951048951,
+            "classification_report": {
+                "0": {
+                    "precision": 0.9659090909090909,
+                    "recall": 0.9550561797752809,
+                    "f1-score": 0.96045197740113,
+                    "support": 89.0
+                },
+                "1": {
+                    "precision": 0.9272727272727272,
+                    "recall": 0.9444444444444444,
+                    "f1-score": 0.9357798165137615,
+                    "support": 54.0
+                },
+                "accuracy": 0.951048951048951,
+                "macro avg": {
+                    "precision": 0.946590909090909,
+                    "recall": 0.9497503121098627,
+                    "f1-score": 0.9481158969574457,
+                    "support": 143.0
+                },
+                "weighted avg": {
+                    "precision": 0.9513191354100444,
+                    "recall": 0.951048951048951,
+                    "f1-score": 0.95113521734576,
+                    "support": 143.0
+                }
+            },
+            "plots": {
+                "confusion_matrix": "/results/cm_decision_tree.png"
+            }
+        },
+        "K-Nearest Neighbors": {
+            "accuracy": 0.965034965034965,
+            "classification_report": {
+                "0": {
+                    "precision": 0.9565217391304348,
+                    "recall": 0.9887640449438202,
+                    "f1-score": 0.9723756906077348,
+                    "support": 89.0
+                },
+                "1": {
+                    "precision": 0.9803921568627451,
+                    "recall": 0.9259259259259259,
+                    "f1-score": 0.9523809523809523,
+                    "support": 54.0
+                },
+                "accuracy": 0.965034965034965,
+                "macro avg": {
+                    "precision": 0.9684569479965899,
+                    "recall": 0.957344985434873,
+                    "f1-score": 0.9623783214943435,
+                    "support": 143.0
+                },
+                "weighted avg": {
+                    "precision": 0.9655357430293491,
+                    "recall": 0.965034965034965,
+                    "f1-score": 0.9648252300186002,
+                    "support": 143.0
+                }
+            },
+            "plots": {
+                "confusion_matrix": "/results/cm_k-nearest_neighbors.png"
+            }
+        },
+        "SVC": {
+            "accuracy": 0.951048951048951,
+            "classification_report": {
+                "0": {
+                    "precision": 0.9361702127659575,
+                    "recall": 0.9887640449438202,
+                    "f1-score": 0.9617486338797814,
+                    "support": 89.0
+                },
+                "1": {
+                    "precision": 0.9795918367346939,
+                    "recall": 0.8888888888888888,
+                    "f1-score": 0.9320388349514563,
+                    "support": 54.0
+                },
+                "accuracy": 0.951048951048951,
+                "macro avg": {
+                    "precision": 0.9578810247503257,
+                    "recall": 0.9388264669163545,
+                    "f1-score": 0.9468937344156189,
+                    "support": 143.0
+                },
+                "weighted avg": {
+                    "precision": 0.9525671896492566,
+                    "recall": 0.951048951048951,
+                    "f1-score": 0.9505295489697844,
+                    "support": 143.0
+                }
+            },
+            "plots": {
+                "confusion_matrix": "/results/cm_svc.png"
+            }
+        }
+    },
+    "comparison_plots": {
+        "roc_curves": "/results/roc_curves_comparison.png"
+    },
+    "accuracies": {
+        "Naive Bayes": 0.958041958041958,
+        "Logistic Regression": 0.958041958041958,
+        "Decision Tree": 0.951048951048951,
+        "K-Nearest Neighbors": 0.965034965034965,
+        "SVC": 0.951048951048951
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NB vs. Decision Tree Comparison</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <h1>ML Dashboard</h1>
+            </div>
+            <nav>
+                <a href="index.html" class="nav-link active">Back to Main Dashboard</a>
+            </nav>
+        </header>
+
+        <main class="app-main">
+            <section id="comparison-page" class="page">
+                <div class="page-header">
+                    <h2>Comparison: Naive Bayes vs. Decision Tree</h2>
+                </div>
+
+                <div class="comparison-grid">
+                    <div class="card">
+                        <h3>Theoretical Knowledge: Naive Bayes</h3>
+                        <p><strong>Core Idea:</strong> Based on Bayes' Theorem. It's called "naive" because it makes a strong assumption that all features are independent of each other, given the class.</p>
+                        <p><strong>How it works:</strong> It calculates the probability of each class based on the probabilities of the features present in the data.</p>
+                        <ul>
+                            <li>✅ <strong>Pros:</strong> Very fast to train, works well with high-dimensional data (like text), and performs surprisingly well even when its independence assumption is violated.</li>
+                            <li>❌ <strong>Cons:</strong> The independence assumption is almost never true in the real world. It can be outperformed by more complex models.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Theoretical Knowledge: Decision Tree</h3>
+                        <p><strong>Core Idea:</strong> A flowchart-like structure where each internal node represents a "test" on a feature, and each leaf node represents a class label.</p>
+                        <p><strong>How it works:</strong> It splits the data into subsets based on feature values, trying to create the "purest" possible child nodes (i.e., nodes containing mostly one class).</p>
+                        <ul>
+                            <li>✅ <strong>Pros:</strong> Very easy to understand and interpret ("white box" model). Requires little data preparation.</li>
+                            <li>❌ <strong>Cons:</strong> Prone to overfitting (creating trees that are too complex and don't generalize well). Can be unstable, as small changes in data can lead to a different tree.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="results-container" class="hidden">
+                    <div class="page-header" style="margin-top: 2rem;">
+                        <h2>Live Analysis Results</h2>
+                    </div>
+                    </div>
+
+                <div id="error-message" class="hidden">
+                    Please <a href="index.html">run an analysis on the main dashboard</a> first to see the results here.
+                </div>
+
+            </section>
+        </main>
+    </div>
+    <script src="comparison.js"></script>
+</body>
+</html>

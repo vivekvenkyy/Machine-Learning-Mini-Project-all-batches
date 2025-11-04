@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ML Model Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="app-header">
+        <div class="logo">
+          <h1>ML Dashboard</h1>
+        </div>
+        <nav id="app-nav" class="hidden">
+          <a href="#dashboard" class="nav-link active">Dashboard</a>
+          <!-- <a href="#nb-vs-svc" class="nav-link comparison-link">NB vs SVC</a>
+          <a href="#nb-vs-dt" class="nav-link comparison-link">NB vs Decision Tree</a> -->
+          <a
+            href="nb_vs_svc.html"
+            target="_blank"
+            class="nav-link comparison-link"
+            >NB vs SVC (Theory)</a
+          >
+          <a
+            href="nb_vs_dt.html"
+            target="_blank"
+            class="nav-link comparison-link"
+            >NB vs Decision Tree (Theory)</a
+          >
+        </nav>
+      </header>
+
+      <main class="app-main">
+        <section id="upload-page" class="page">
+          <div class="upload-box">
+            <h2>Analyze Model Performance</h2>
+            <p>
+              Upload a .CSV dataset to compare Naive Bayes with other
+              classification algorithms.
+            </p>
+            <details class="info-note">
+              <summary>
+                <span class="info-icon">💡</span>
+                <strong
+                  >Important: Click here for dataset limitations and
+                  tips.</strong
+                >
+              </summary>
+              <div class="info-content">
+                <h4>A quick note for new data analysts! 🎓</h4>
+                <p>
+                  This tool is designed for <strong>clean datasets</strong>. For
+                  the best results, please be aware of these limitations:
+                </p>
+                <ul>
+                  <li>
+                    ✅ <strong>What this app does:</strong> It automatically
+                    finds the target column (like 'diagnosis' or 'Species'),
+                    drops 'id' columns, and removes empty columns.
+                  </li>
+                  <li>
+                    ❌ <strong>What this app does NOT do:</strong> It does not
+                    handle missing values (like `NaN`), scale your numbers
+                    (normalization), or remove outliers.
+                  </li>
+                  <li>
+                    👉 <strong>Your goal:</strong> Upload a dataset that is
+                    already preprocessed. If your data has missing values, the
+                    analysis might fail!
+                  </li>
+                </ul>
+              </div>
+            </details>
+
+            <label for="preloaded-select" class="preloaded-label"
+              >Or Select a Pre-loaded Dataset:</label
+            >
+            <select id="preloaded-select" class="preloaded-select">
+              <option value="">-- Please choose an option --</option>
+              <option value="breast_Cancer.csv">Breast Cancer Dataset</option>
+              <option value="iris.csv">Iris Dataset</option>
+              <option value="sms_spam.csv">SMS Spam Dataset</option>
+              <option value="titanic.csv">Titanic Dataset</option>
+            </select>
+
+            <div class="separator-text">
+              <span>OR</span>
+            </div>
+
+            <div class="file-upload-wrapper">
+              <input
+                type="file"
+                id="file-input"
+                class="file-input"
+                accept=".csv"
+              />
+              <label for="file-input" id="file-label">
+                <span class="file-label-icon">📁</span>
+                <span id="file-label-text">Click to select file</span>
+              </label>
+            </div>
+
+            <button id="analyze-btn" disabled>Run Analysis</button>
+          </div>
+        </section>
+
+        <div id="loader" class="loader-overlay hidden">
+          <div class="spinner"></div>
+          <p>Running models and generating insights...</p>
+        </div>
+
+        <div id="results-container"></div>
+        <div id="error-message" class="hidden"></div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
