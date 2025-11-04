@@ -176,21 +176,6 @@ pip install --force-reinstall streamlit
 | scikit-learn | Latest | Machine learning (ICA, PCA) |
 | scikit-image | Latest | Image processing |
 
-## Color Scheme
-
-- **Primary Teal:** #17a2b8
-- **Light Teal:** #5dccdb
-- **Dark Teal:** #0d7f8f
-- **Green (Success):** #28a745
-- **Red (PCA):** #dc3545
-- **Yellow (Warning):** #ffc107
-- **Dark Text:** #2c3e50
-- **Light Gray:** #6c757d
-
-## License
-
-This project is provided as-is for educational and research purposes.
-
 ## Notes
 
 - ICA works best with multiple observed mixtures (multiple recordings/viewpoints)
